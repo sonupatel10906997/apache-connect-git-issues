@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sonu.kafka</groupId>
-    <artifactId>kafka-connect-project</artifactId>
+    <artifactId>kafka-connect-git-issues</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>kafka-connect-project</name>
+    <name>kafka-connect-git-issues</name>
 
     <properties>
-        <kafka.version>0.10.2.0</kafka.version>
+        <kafka.version>3.3.2</kafka.version>
         <junit.version>4.12</junit.version>
     </properties>
 

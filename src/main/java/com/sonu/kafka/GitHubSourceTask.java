@@ -14,10 +14,7 @@ import org.slf4j.LoggerFactory;
 
 import java.net.ConnectException;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static com.sonu.kafka.GitHubSchemas.*;
 
@@ -159,8 +156,8 @@ public class GitHubSourceTask extends SourceTask {
     Struct value = new Struct(VALUE_SCHEMA)
             .put(URL_FIELD, issue.getUrl())
             .put(TITLE_FIELD, issue.getTitle())
-            .put(CREATED_AT_FIELD, issue.getCreatedAt())
-            .put(UPDATE_AT_FIELD, issue.getUpdatedAt())
+            .put(CREATED_AT_FIELD, Date.from(issue.getCreatedAt()))
+            .put(UPDATE_AT_FIELD, Date.from(issue.getUpdatedAt()))
             .put(NUMBER_FIELD, issue.getNumber())
             .put(STATE_FIELD, issue.getState());
 

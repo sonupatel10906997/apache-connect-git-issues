@@ -31,10 +31,10 @@ public class GitHubSchemas {
     public static String PR_HTML_URL_FIELD = "html_url";
 
     //Schemas names
-    public static String SCHEMA_KEY = "GitHub Issue Key";
-    public static String SCHEMA_VALUE_ISSUE = "Issue";
-    public static String SCHEMA_VALUE_USER = "User";
-    public static String SCHEMA_VALUE_PR = "PR";
+    public static String SCHEMA_KEY = "com.sonu.kafka.connect.github.IssueKey";
+    public static String SCHEMA_VALUE_ISSUE = "com.sonu.kafka.connect.github.IssueValue";
+    public static String SCHEMA_VALUE_USER = "com.sonu.kafka.connect.github.UserValue";
+    public static String SCHEMA_VALUE_PR = "com.sonu.kafka.connect.github.PrValue";
 
     //Key Schemas
     public static Schema KEY_SCHEMA = SchemaBuilder.struct().name(SCHEMA_KEY)
